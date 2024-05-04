@@ -1,6 +1,6 @@
 import RequisicaoIncorreta from "../erros/RequisicaoIncorreta.js";
 
-async function paginar (req, res, next) {
+async function paginar (req, res, next) { // limita a quantidade de livros mostrado por página
   try {
     let { limite = 5, pagina = 1 , ordenacao = "_id:-1" } = req.query;
     
